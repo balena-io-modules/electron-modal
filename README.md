@@ -6,7 +6,7 @@ electron-modal
 [![npm version](https://badge.fury.io/js/electron-modal.svg)](http://badge.fury.io/js/electron-modal)
 [![dependencies](https://david-dm.org/resin-io/electron-modal.svg)](https://david-dm.org/resin-io/electron-modal.svg)
 [![Build Status](https://travis-ci.org/resin-io-modules/electron-modal.svg?branch=master)](https://travis-ci.org/resin-io-modules/electron-modal)
-[![Build status](https://ci.appveyor.com/api/projects/status/ulwk1nnh7l8209xg/branch/master?svg=true)](https://ci.appveyor.com/project/resin-io-modules/electron-modal/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/j98es2eaytr1fc90/branch/master?svg=true)](https://ci.appveyor.com/project/resin-io/electron-modal/branch/master)
 
 Let's face it, using HTML5 modals on Electron applications doesn't provide a
 native experience, and `electron-modal` wants to fix that, by allowing you to
