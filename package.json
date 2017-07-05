@@ -1,0 +1,39 @@
+{
+  "name": "electron-modal",
+  "version": "1.0.0",
+  "description": "Easily create modals using child browser windows",
+  "main": "lib/modal.js",
+  "homepage": "https://github.com/resin-io-modules/electron-modal",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/resin-io-modules/electron-modal.git"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test-renderer": "electron-mocha --renderer --recursive tests/renderer tests/shared -R spec",
+    "test-main": "electron-mocha --recursive tests/main tests/shared -R spec ",
+    "test": "npm run lint && npm run test-main && npm run test-renderer",
+    "start": "electron example/main.js",
+    "lint": "eslint lib tests example"
+  },
+  "keywords": [
+    "electron",
+    "modal",
+    "window",
+    "browser",
+    "native"
+  ],
+  "author": "Juan Cruz Viotti <jv@jviotti.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "electron": "^1.6.11",
+    "electron-mocha": "^4.0.0",
+    "eslint": "^4.1.1"
+  },
+  "dependencies": {
+    "is-electron-renderer": "^2.0.1"
+  }
+}
