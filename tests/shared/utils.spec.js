@@ -18,6 +18,7 @@
 
 const chai = require('chai');
 const path = require('path');
+const os = require('os');
 const utils = require('../../lib/utils');
 
 describe('Shared: Utils', function() {
@@ -26,7 +27,11 @@ describe('Shared: Utils', function() {
 
     it('should return a file URL', function() {
       const htmlFile = path.join(__dirname, 'index.html');
-      chai.expect(utils.getFileURL(htmlFile)).to.equal(`file://${htmlFile}`);
+      if (os.platform() === 'win32') {
+        chai.expect(utils.getFileURL(htmlFile)).to.equal(`file:///${htmlFile}`);
+      } else {
+        chai.expect(utils.getFileURL(htmlFile)).to.equal(`file://${htmlFile}`);
+      }
     });
 
   });
